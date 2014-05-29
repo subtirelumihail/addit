@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AddIt</title>
+    <link href="css/styles.css" rel="stylesheet"><!--link(href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic", rel="stylesheet", type="text/css")!-->
+  </head>
+</html>
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <div class="left">
+        <div class="logo notselectable">ADDIT<span class="plus">+</span></div>
+        <div class="howtoplay">HOW TO PLAY?</div>
+      </div>
+      <div class="middle">
+        <div class="guessnumber notselectable"><span></span></div>
+        <div class="timer">
+          <div class="time"><span></span></div>
+          <input value="100" class="dial">
+        </div>
+      </div>
+      <div class="right">
+        <div class="score"></div>
+        <div class="highscore">BEST: <span class="bestscore">000000</span></div>
+        <div class="newgame">NEW GAME?</div>
+      </div>
+    </div>
+    <div id="main">
+      <div class="overlayer"></div>
+      <div id="help">
+        <div class="container">To play this game you have to <b>select 3 numbers</b> and their <b>sum</b> should <b>equal</b> the middle <b>top number</b><br/><br/>To <b>deselect</b> a tile you can click it again
+          <div class="close">close</div>
+        </div>
+      </div>
+      <div class="inner">
+        <ul class="game"></ul>
+      </div>
+    </div>
+    <div id="footer">
+      <p>This app was made with <strong>love</strong>			</p>
+    </div>
+  </div>
+  <script src="../res/jquery-1.10.2.min.js" charset="UTF-8"></script>
+  <script src="../res/modernizr-2.6.2.min.js"></script>
+  <script src="../res/underscore.js"></script>
+  <script src="../res/backbone.js"></script>
+  <script src="../res/jquery.knob.js"></script>
+  <script src="../res/numberAnimate.js"></script>
+  <script src="js/game.prototype.js"></script>
+  <script src="js/score.prototype.js"></script>
+  <script src="js/timer.prototype.js"></script>
+  <script src="js/app.js"></script>
+</body>
